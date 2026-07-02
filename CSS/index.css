@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    padding-left: 5%;;
+}
+
+/* CSS Background Start */
+.css-background{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#p1{
+    background-color: skyblue;
+}
+
+.background-img{
+    width: 50%;
+    height: 200px;
+    border: 3px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT208qqDbjTAWrq93U33jnPwgFZkSlOOkx7oews-03jXbRPPwUTE2DIgLCp&s=10");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.css-background q{
+    background-color: aquamarine;
+}
+
+
+/* CSS Background Start */
