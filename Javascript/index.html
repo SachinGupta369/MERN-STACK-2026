@@ -86,6 +86,103 @@
       const x = symbol();
       const y = symbol();
     </code></pre>
+
+    <h1>Javascript toString()</h1>
+
+    <p>The JavaScript toString() method converts a variable (or a value) to a string. <br>
+
+It is a built-in method for many data types, including numbers, arrays, dates, and objects. <br> <br>
+
+The method is useful for: <br> <br>
+
+Converting data to a readable format for display <br>
+Ensuring type compatibility when a string is required <br>
+Customizing objects other user interfaces <br>
+Customizing objects for debugging</p>
+
+<h1>Javascript toLocaleString()</h1>   
+
+<p>The toLocaleString() method converts a value to a string, using local formatting rules. <br><br>
+
+The toLocaleString() method is especially useful for formatting numbers, dates, arrays, currencies, and percentages for different countries.</p>
+
+<h3>The toLocaleString() Method</h3>
+
+<p>The toLocaleString() method is available for many JavaScript datatypes / objects: <br>
+</p>
+
+<ol>
+   <li>Numbers</li>
+   <li>Dates</li>
+   <li>Arrays</li>
+   <li>BigInt</li>
+</ol>
+
+<h1>Javascript Type Coercion</h1>
+
+<p>Type coercion is the automatic conversion of values from one data type to another. <br> <br>
+
+Type coercion happens when you perform an operation on different data types, and the JavaScript engine tries to make them "fit" together.</p>
+
+<h2>String Coercion (+)</h2>
+
+<p>If any part of a + operation is a string, JavaScript converts everything to strings and concatenates them. <br></p>
+
+   <pre><code style="background-color: #f4f4f4; border: 1px solid #ccc; display: block; padding: 10px; border-radius: 4px; font-family: monospace; overflow-x: auto;">
+       let x = "5" + 2 // x = "52"
+    </code></pre>
+
+<h2>Numeric Coercion</h2>
+
+<p>Other arithmetic operators (-, *, /, %) and the unary plus (+x) force values into numbers.
+</p>
+
+<pre><code style="background-color: #f4f4f4; border: 1px solid #ccc; display: block; padding: 10px; border-radius: 4px; font-family: monospace; overflow-x: auto;">
+       let x ="5"-2 // x = 3
+    </code></pre>
+
+<h2>Loose Equality</h2>    
+
+<p>This operator performs coercion to find a "common type" before comparing.
+</p>
+
+<pre><code style="background-color: #f4f4f4; border: 1px solid #ccc; display: block; padding: 10px; border-radius: 4px; font-family: monospace; overflow-x: auto;">
+       let x = (5 == "5") // x = true
+    </code></pre>
+
+<h1>Javascript Type Conversion</h1>
+
+ <ol>
+   <li>Converting Strings to Numbers</li>
+   <li>Converting Numbers to Strings</li>
+   <li>Converting Dates to Numbers</li>
+   <li>Converting Numbers to Dates</li>
+   <li>Converting Booleans to Numbers</li>
+   <li>Converting Numbers to Booleans</li>
+ </ol>
+
+
+<h2>Converting Strings to Numbers</h2>
+
+The global method Number() converts a variable (or a value) into a number. <br>
+
+A numeric string (like "3.14") converts to a number (like 3.14). <br>
+
+An empty string (like "") converts to 0. <br>
+
+A non numeric string (like "John") converts to NaN (Not a Number). <br> <br>  
+
+Examples <br>
+<b>These will convert:</b> <br><br>
+
+Number("3.14") <br>
+Number(Math.PI) <br>
+Number(" ") <br>
+Number("") <br> <br>
+<b>These will not convert: </b> <br>
+
+Number("99 88") <br>
+Number("John") <br>
 </body>
 
 </html>
