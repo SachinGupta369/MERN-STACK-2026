@@ -76,10 +76,26 @@ let copypopularTeas = popularTeas;
     Create a hardcopy of this array named `hardCopyCities`.
 */
 
+let topCities = ['Berlin','Singapore','New York']
+
+let hardCopyCities = [...topCities]
+
+topCities.pop();
+// console.log(topCities);
+
+// console.log(hardCopyCities);
+
 
 /* 
-8. You have Two arrays: `europeanCities` containing `"Paris"`, and `"Rome"`, and `asianCities` containing `"Tokoyo"` and `"Bangkok"`.
+8. You have Two arrays: `europeanCities` containing `"Paris"`, and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`.
     Merge these two arrays into a new array named `worldCities`.
 */
+
+let europeanCities = ['Paris', 'Rome'];
+let asianCities = ['Tokyo', 'Bangkok'];
+
+let worldCities = [...asianCities, ...europeanCities]
+
+console.log(worldCities);
 
 
