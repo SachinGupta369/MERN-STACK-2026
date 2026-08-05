@@ -175,6 +175,17 @@ myCity.forEach(els =>{
 Skip the value `7` and multiply the rest by 2. Store the result in a new array named `doubledNumbers`.
 */
 
+let numbs = [2,5,7,9];
+let doubledNumbers = []
+
+for (let n=0; n<numbs.length; n++){
+    if(numbs[n] == '7'){
+        continue
+    }
+    doubledNumbers.push(numbs[n]*2)
+}
+
+// console.log(doubledNumbers);
 
 
 /* 
@@ -183,3 +194,16 @@ Skip the value `7` and multiply the rest by 2. Store the result in a new array n
 And stop when the length of the current tea name is greater than 10.
 Store the teas iterated over in an array named `shortTeas`.
 */
+
+let myTea = ["chai", "Green tea", "black tea", "jasmine tea", "Herbal tea"]
+let shortTeas = [];
+
+for (const teas of myTea) {
+    if(teas.length >= 10 ){
+        break
+    }
+
+    shortTeas.push(teas)
+}
+
+console.log(shortTeas);
