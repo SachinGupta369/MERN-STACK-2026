@@ -54,12 +54,21 @@ return takesFun('earl grey') //takesFun is nickname of makeTea
 }
 
 let check = processTeaOrder(makeTea) // parameter call the makeTea function
-console.log(check);
-
+// console.log(check);
 
 
 /* 
-Write a function named `createTeaMaker` that returns another function. The returned function should take one parameter, `teaType`, and return a message like `"Making green tea"`
+5. Write a function named `createTeaMaker` that returns another function. The returned function should take one parameter, `teaType`, and return a message like `"Making green tea"`
 
-Store the returned function in a variable named  `teaMaker` and call it with a `"green tea"`.
+Store the returned function in a variable named `teaMaker` and call it with a `"green tea"`.
 */
+
+function createTeaMaker(){
+    let score = 45
+    return function(teaType){
+        return `Making ${teaType}, ${score}`
+    }
+}
+
+let teaMaker = createTeaMaker('green tea')
+console.log(teaMaker('mango tea'));
