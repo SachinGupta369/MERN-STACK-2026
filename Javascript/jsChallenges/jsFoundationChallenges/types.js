@@ -19,8 +19,8 @@ function stringToNumber(input) {
       
   }}
 
-console.log(stringToNumber('sachin'));  // not a number
-console.log(stringToNumber('123')); // converted
+// console.log(stringToNumber('sachin'));  // not a number
+// console.log(stringToNumber('123')); // converted
 
 /* Task 2:
 
@@ -53,11 +53,26 @@ function whatAmI(input){
    }
 }
 
-console.log(whatAmI('name'));
-console.log(whatAmI(''));
-console.log( whatAmI(123));
+// console.log(whatAmI('name'));
+// console.log(whatAmI(''));
+// console.log( whatAmI(123));
 
 /* Task 4:
-
 Write a function isItTruthy that takes an input and returns "It's truthy!" if the value is truthy in JavaScript, or "It's falsey!" if it's falsey.
 */
+
+function isItTruthy(input){
+    let result = Boolean(input)
+    if(result === true){     
+        return "It's truthy"
+    }else{
+        return "It's falsey"
+    }
+}
+// console.log(typeof result);
+
+console.log(isItTruthy(undefined));
+console.log(isItTruthy(''));
+console.log(isItTruthy(1));
+
+
